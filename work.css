@@ -1,0 +1,100 @@
+.todo {
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 150px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 30px #afafaf;
+}
+
+h2 {
+    color: black;
+    display: flex;
+    align-items: center;
+    margin-bottom: 45px;
+    font-size: 30px;
+    position: relative;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    border: none;
+    outline: 3px groove #000;
+    outline-offset: 5px;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0px 0px 10px #5d5d5d;
+}
+
+.row input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 15px; /* Increased padding for input */
+    background: transparent;
+    font-size: 20px; /* Matched font size with Add Task button */
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.row input::placeholder {
+    color: #363054;
+    font-size: 20px; /* Matched font size with Add Task button */
+}
+
+.row button {
+    border: none;
+    outline: none;
+    padding: 12px 20px; /* Adjusted padding for smaller delete button */
+    background: #26068f;
+    color: #fff;
+    font-size: 16px; /* Decreased font size for smaller delete button */
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 30px;
+    margin: 1px;
+}
+
+ul {
+    padding-left: 0; /* Remove default padding */
+}
+
+ul li {
+    list-style-type: disc; /* Use disc type for bullet */
+    font-size: 20px; /* Decreased font size for list items */
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 10px 8px; /* Decreased padding between list items */
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    margin-block: 5px; /* Decreased margin between list items */
+    display: flex;
+    justify-content: space-between; /* Align items evenly */
+    align-items: center;
+    text-align: left; /* Align text to the left */
+}
+
+ul li span {
+    color: #26068f; /* Same color as Add Task button */
+}
+
+ul li button {
+    background: #ff4d4d; /* Color changed to red */
+    color: white;
+    border: none;
+    border-radius: 10px; /* Updated border radius */
+    padding: 12px 20px; /* Adjusted padding for smaller delete button */
+    font-size: 16px; /* Decreased font size for smaller delete button */
+    cursor: pointer;
+    align-self: center; /* Center vertically */
+}
+
+ul li button:hover {
+    background: #ff1a1a; /* Darker shade on hover */
+}
