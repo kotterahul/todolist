@@ -1,18 +1,23 @@
-let listcontainer=document.getElementById("list-container")
-let inputbox=document.getElementById('input-box')
+let listcontainer = document.getElementById("list-container");
+let inputbox = document.getElementById('input-box');
 
-function addTask(){
-    if(inputbox.value==='')
-    {
-        alert('empty,add your task');
-    }
-    else{
-        let task=document.createElement('li');
-        task.textContent=inputbox.value;
+function addTask() {
+    if (inputbox.value === '') {
+        alert('Empty, add your task');
+    } else {
+        let task = document.createElement('li');
+        task.textContent = inputbox.value;
+
+        let deletebutton = document.createElement('button');
+        deletebutton.textContent = 'delete';
+        deletebutton.onclick = function() {
+            listcontainer.removeChild(task);
+        };
+
+        
+        task.appendChild(deletebutton);
         listcontainer.appendChild(task);
 
-        let span=document.createElement('span')
-        span.textContent='u00d7';
+        inputbox.value = '';
     }
-    inputbox.value='';
 }
